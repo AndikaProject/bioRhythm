@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C19E360197A629E00B35857 /* RBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E356197A629E00B35857 /* RBLoginViewController.m */; };
+		3C19E361197A629E00B35857 /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E35A197A629E00B35857 /* RBAppDelegate.m */; };
+		3C19E362197A629E00B35857 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C19E35E197A629E00B35857 /* main.storyboard */; };
+		3C19E363197A629E00B35857 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C19E35F197A629E00B35857 /* Images.xcassets */; };
 		3C641802197A336F0066A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641801197A336F0066A389 /* Foundation.framework */; };
 		3C641804197A336F0066A389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641803197A336F0066A389 /* CoreGraphics.framework */; };
 		3C641806197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
 		3C64180C197A336F0066A389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C64180A197A336F0066A389 /* InfoPlist.strings */; };
 		3C64180E197A336F0066A389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C64180D197A336F0066A389 /* main.m */; };
-		3C641812197A336F0066A389 /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C641811197A336F0066A389 /* RBAppDelegate.m */; };
-		3C641814197A336F0066A389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C641813197A336F0066A389 /* Images.xcassets */; };
 		3C64181B197A336F0066A389 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64181A197A336F0066A389 /* XCTest.framework */; };
 		3C64181C197A336F0066A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641801197A336F0066A389 /* Foundation.framework */; };
 		3C64181D197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
 		3C641825197A336F0066A389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C641823197A336F0066A389 /* InfoPlist.strings */; };
 		3C641827197A336F0066A389 /* bioRhythmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C641826197A336F0066A389 /* bioRhythmTests.m */; };
-		3C641831197A34E90066A389 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C641830197A34E90066A389 /* main.storyboard */; };
-		3C641834197A376A0066A389 /* RBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C641833197A376A0066A389 /* RBLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C19E355197A629E00B35857 /* RBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLoginViewController.h; sourceTree = "<group>"; };
+		3C19E356197A629E00B35857 /* RBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLoginViewController.m; sourceTree = "<group>"; };
+		3C19E359197A629E00B35857 /* RBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBAppDelegate.h; sourceTree = "<group>"; };
+		3C19E35A197A629E00B35857 /* RBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAppDelegate.m; sourceTree = "<group>"; };
+		3C19E35E197A629E00B35857 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		3C19E35F197A629E00B35857 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3C6417FE197A336F0066A389 /* bioRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bioRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C641801197A336F0066A389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C641803197A336F0066A389 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -42,17 +48,11 @@
 		3C64180B197A336F0066A389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C64180D197A336F0066A389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C64180F197A336F0066A389 /* bioRhythm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bioRhythm-Prefix.pch"; sourceTree = "<group>"; };
-		3C641810197A336F0066A389 /* RBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBAppDelegate.h; sourceTree = "<group>"; };
-		3C641811197A336F0066A389 /* RBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAppDelegate.m; sourceTree = "<group>"; };
-		3C641813197A336F0066A389 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3C641819197A336F0066A389 /* bioRhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bioRhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64181A197A336F0066A389 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3C641822197A336F0066A389 /* bioRhythmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bioRhythmTests-Info.plist"; sourceTree = "<group>"; };
 		3C641824197A336F0066A389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C641826197A336F0066A389 /* bioRhythmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bioRhythmTests.m; sourceTree = "<group>"; };
-		3C641830197A34E90066A389 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = ../main.storyboard; sourceTree = "<group>"; };
-		3C641832197A376A0066A389 /* RBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLoginViewController.h; sourceTree = "<group>"; };
-		3C641833197A376A0066A389 /* RBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C19E353197A629E00B35857 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E354197A629E00B35857 /* Controller */,
+				3C19E357197A629E00B35857 /* Helpers */,
+				3C19E358197A629E00B35857 /* Model */,
+				3C19E359197A629E00B35857 /* RBAppDelegate.h */,
+				3C19E35A197A629E00B35857 /* RBAppDelegate.m */,
+				3C19E35B197A629E00B35857 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3C19E354197A629E00B35857 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E355197A629E00B35857 /* RBLoginViewController.h */,
+				3C19E356197A629E00B35857 /* RBLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C19E357197A629E00B35857 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3C19E358197A629E00B35857 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C19E35B197A629E00B35857 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C19E35C197A629E00B35857 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E35D197A629E00B35857 /* IBFiles */,
+				3C19E35F197A629E00B35857 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C19E35D197A629E00B35857 /* IBFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E35E197A629E00B35857 /* main.storyboard */,
+			);
+			path = IBFiles;
+			sourceTree = "<group>";
+		};
 		3C6417F5197A336F0066A389 = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +172,9 @@
 		3C641807197A336F0066A389 /* bioRhythm */ = {
 			isa = PBXGroup;
 			children = (
-				3C641810197A336F0066A389 /* RBAppDelegate.h */,
-				3C641811197A336F0066A389 /* RBAppDelegate.m */,
-				3C641813197A336F0066A389 /* Images.xcassets */,
+				3C19E353197A629E00B35857 /* Classes */,
+				3C19E35C197A629E00B35857 /* Resources */,
 				3C641808197A336F0066A389 /* Supporting Files */,
-				3C641830197A34E90066A389 /* main.storyboard */,
-				3C641832197A376A0066A389 /* RBLoginViewController.h */,
-				3C641833197A376A0066A389 /* RBLoginViewController.m */,
 			);
 			path = bioRhythm;
 			sourceTree = "<group>";
@@ -228,9 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C19E363197A629E00B35857 /* Images.xcassets in Resources */,
 				3C64180C197A336F0066A389 /* InfoPlist.strings in Resources */,
-				3C641814197A336F0066A389 /* Images.xcassets in Resources */,
-				3C641831197A34E90066A389 /* main.storyboard in Resources */,
+				3C19E362197A629E00B35857 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C641812197A336F0066A389 /* RBAppDelegate.m in Sources */,
+				3C19E360197A629E00B35857 /* RBLoginViewController.m in Sources */,
 				3C64180E197A336F0066A389 /* main.m in Sources */,
-				3C641834197A376A0066A389 /* RBLoginViewController.m in Sources */,
+				3C19E361197A629E00B35857 /* RBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +504,7 @@
 				3C64182C197A336F0066A389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C64182D197A336F0066A389 /* Build configuration list for PBXNativeTarget "bioRhythmTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +513,7 @@
 				3C64182F197A336F0066A389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
