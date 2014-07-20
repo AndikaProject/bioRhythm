@@ -21,6 +21,12 @@
 
 @implementation RBLoginViewController
 
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard {
+    RBLoginViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBLoginViewController"];
+
+    return controller;
+}
+
 
 - (void)viewDidLoad
 {
@@ -58,6 +64,7 @@
     } else {
         alertView = [[UIAlertView alloc] initWithTitle:@"login" message:@"succed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 @end

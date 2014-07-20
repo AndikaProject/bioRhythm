@@ -10,4 +10,6 @@
 
 @interface RBLoginViewController : UIViewController
 
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
 @end

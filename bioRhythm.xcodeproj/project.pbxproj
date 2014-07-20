@@ -11,6 +11,14 @@
 		3C19E361197A629E00B35857 /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E35A197A629E00B35857 /* RBAppDelegate.m */; };
 		3C19E362197A629E00B35857 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C19E35E197A629E00B35857 /* main.storyboard */; };
 		3C19E363197A629E00B35857 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C19E35F197A629E00B35857 /* Images.xcassets */; };
+		3C19E3D6197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3CA197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m */; };
+		3C19E3D7197BB70A00B35857 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3CC197BB70A00B35857 /* ECSlidingAnimationController.m */; };
+		3C19E3D8197BB70A00B35857 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3CF197BB70A00B35857 /* ECSlidingInteractiveTransition.m */; };
+		3C19E3D9197BB70A00B35857 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3D1197BB70A00B35857 /* ECSlidingSegue.m */; };
+		3C19E3DA197BB70A00B35857 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3D3197BB70A00B35857 /* ECSlidingViewController.m */; };
+		3C19E3DB197BB70A00B35857 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3D5197BB70A00B35857 /* UIViewController+ECSlidingViewController.m */; };
+		3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3DD197BB83800B35857 /* RBFirstViewController.m */; };
+		3C19E3E1197BBAFF00B35857 /* RBHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */; };
 		3C641802197A336F0066A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641801197A336F0066A389 /* Foundation.framework */; };
 		3C641804197A336F0066A389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641803197A336F0066A389 /* CoreGraphics.framework */; };
 		3C641806197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
@@ -40,6 +48,23 @@
 		3C19E35A197A629E00B35857 /* RBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAppDelegate.m; sourceTree = "<group>"; };
 		3C19E35E197A629E00B35857 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3C19E35F197A629E00B35857 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C19E3C9197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		3C19E3CA197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		3C19E3CB197BB70A00B35857 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
+		3C19E3CC197BB70A00B35857 /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingAnimationController.m; sourceTree = "<group>"; };
+		3C19E3CD197BB70A00B35857 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
+		3C19E3CE197BB70A00B35857 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		3C19E3CF197BB70A00B35857 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
+		3C19E3D0197BB70A00B35857 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingSegue.h; sourceTree = "<group>"; };
+		3C19E3D1197BB70A00B35857 /* ECSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingSegue.m; sourceTree = "<group>"; };
+		3C19E3D2197BB70A00B35857 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		3C19E3D3197BB70A00B35857 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		3C19E3D4197BB70A00B35857 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		3C19E3D5197BB70A00B35857 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		3C19E3DC197BB83800B35857 /* RBFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBFirstViewController.h; sourceTree = "<group>"; };
+		3C19E3DD197BB83800B35857 /* RBFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBFirstViewController.m; sourceTree = "<group>"; };
+		3C19E3DF197BBAFF00B35857 /* RBHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBHomeTabBarController.h; sourceTree = "<group>"; };
+		3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBHomeTabBarController.m; sourceTree = "<group>"; };
 		3C6417FE197A336F0066A389 /* bioRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bioRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C641801197A336F0066A389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C641803197A336F0066A389 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +122,10 @@
 			children = (
 				3C19E355197A629E00B35857 /* RBLoginViewController.h */,
 				3C19E356197A629E00B35857 /* RBLoginViewController.m */,
+				3C19E3DC197BB83800B35857 /* RBFirstViewController.h */,
+				3C19E3DD197BB83800B35857 /* RBFirstViewController.m */,
+				3C19E3DF197BBAFF00B35857 /* RBHomeTabBarController.h */,
+				3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,9 +168,30 @@
 			path = IBFiles;
 			sourceTree = "<group>";
 		};
+		3C19E3C8197BB70A00B35857 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E3C9197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.h */,
+				3C19E3CA197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m */,
+				3C19E3CB197BB70A00B35857 /* ECSlidingAnimationController.h */,
+				3C19E3CC197BB70A00B35857 /* ECSlidingAnimationController.m */,
+				3C19E3CD197BB70A00B35857 /* ECSlidingConstants.h */,
+				3C19E3CE197BB70A00B35857 /* ECSlidingInteractiveTransition.h */,
+				3C19E3CF197BB70A00B35857 /* ECSlidingInteractiveTransition.m */,
+				3C19E3D0197BB70A00B35857 /* ECSlidingSegue.h */,
+				3C19E3D1197BB70A00B35857 /* ECSlidingSegue.m */,
+				3C19E3D2197BB70A00B35857 /* ECSlidingViewController.h */,
+				3C19E3D3197BB70A00B35857 /* ECSlidingViewController.m */,
+				3C19E3D4197BB70A00B35857 /* UIViewController+ECSlidingViewController.h */,
+				3C19E3D5197BB70A00B35857 /* UIViewController+ECSlidingViewController.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
 		3C6417F5197A336F0066A389 = {
 			isa = PBXGroup;
 			children = (
+				3C19E3C8197BB70A00B35857 /* ECSlidingViewController */,
 				3C641807197A336F0066A389 /* bioRhythm */,
 				3C641820197A336F0066A389 /* bioRhythmTests */,
 				3C641800197A336F0066A389 /* Frameworks */,
@@ -306,8 +356,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C19E360197A629E00B35857 /* RBLoginViewController.m in Sources */,
+				3C19E3DB197BB70A00B35857 /* UIViewController+ECSlidingViewController.m in Sources */,
+				3C19E3E1197BBAFF00B35857 /* RBHomeTabBarController.m in Sources */,
 				3C64180E197A336F0066A389 /* main.m in Sources */,
+				3C19E3D8197BB70A00B35857 /* ECSlidingInteractiveTransition.m in Sources */,
+				3C19E3D9197BB70A00B35857 /* ECSlidingSegue.m in Sources */,
 				3C19E361197A629E00B35857 /* RBAppDelegate.m in Sources */,
+				3C19E3DA197BB70A00B35857 /* ECSlidingViewController.m in Sources */,
+				3C19E3D7197BB70A00B35857 /* ECSlidingAnimationController.m in Sources */,
+				3C19E3D6197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
