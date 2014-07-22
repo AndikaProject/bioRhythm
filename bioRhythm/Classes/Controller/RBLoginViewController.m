@@ -8,14 +8,17 @@
 
 #import "RBLoginViewController.h"
 
+#import "RBCreateAccountViewController.h"
+
+
+
 @interface RBLoginViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *buttonLogin;
-@property (strong, nonatomic) IBOutlet UILabel *labelWelcome;
-@property (strong, nonatomic) IBOutlet UITextField *textFieldName;
+
+@property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPassword;
+@property (strong, nonatomic) IBOutlet UIButton *buttonLogin;
 
 
-- (IBAction)buttonLoginPressed:(id)sender;
 
 @end
 
@@ -23,7 +26,7 @@
 
 + (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard {
     RBLoginViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBLoginViewController"];
-
+    
     return controller;
 }
 
@@ -32,7 +35,9 @@
 {
     [super viewDidLoad];
     
-    self.buttonLogin.backgroundColor = [UIColor blueColor];
+    self.buttonLogin.backgroundColor = [UIColor blackColor];
+    [_scrollerLogin setScrollEnabled:YES];
+    [_scrollerLogin setContentSize:(CGSizeMake(341, 800))];
     
     // Do any additional setup after loading the view.
 }
@@ -53,18 +58,31 @@
  // Pass the selected object to the new view controller.
  }
  */
+
 #pragma mark - action
 - (IBAction)buttonLoginPressed:(id)sender {
-    NSString *name = _textFieldName.text;
+    NSString *name = _textFieldEmail.text;
     NSString *password = _textFieldPassword.text;
     UIAlertView *alertView;
     if (name.length == 0 || password.length == 0) {
         alertView  = [[UIAlertView alloc] initWithTitle:@"error" message:@"please fill username and password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
     } else {
-        alertView = [[UIAlertView alloc] initWithTitle:@"login" message:@"succed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        alertView = [[UIAlertView alloc] initWithTitle:@"login" message:@"success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
+    
 }
+
+
+//- (IBAction)buttonCreateAccountPressed:(id)sender {
+//  
+// RBCreateAccountViewController *controller = [RBCreateAccountViewController controllerWithStoryBoard:self.storyboard];
+//[self presentViewController:controller animated:YES completion:nil];
+//   
+//}
+
+
+
 @end

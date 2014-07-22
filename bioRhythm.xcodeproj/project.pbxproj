@@ -19,6 +19,14 @@
 		3C19E3DB197BB70A00B35857 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3D5197BB70A00B35857 /* UIViewController+ECSlidingViewController.m */; };
 		3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3DD197BB83800B35857 /* RBFirstViewController.m */; };
 		3C19E3E1197BBAFF00B35857 /* RBHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */; };
+		3C19E3E4197BFBF800B35857 /* RBSubscriptionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3E3197BFBF800B35857 /* RBSubscriptionCodeViewController.m */; };
+		3C19E3E7197C067200B35857 /* RBCreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3E6197C067200B35857 /* RBCreateAccountViewController.m */; };
+		3C19E3EA197C0A9200B35857 /* RBResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3E9197C0A9200B35857 /* RBResetPasswordViewController.m */; };
+		3C19E3ED197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3EC197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m */; };
+		3C19E3F0197C0D8C00B35857 /* RBMenuCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C19E3EF197C0D8C00B35857 /* RBMenuCustomCell.xib */; };
+		3C19E3F6197C0F9C00B35857 /* RBMenuCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3F5197C0F9C00B35857 /* RBMenuCustomCell.m */; };
+		3C19E3F9197C10E000B35857 /* RBMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */; };
+		3C19E3FC197D06DC00B35857 /* RBFirstNavigatonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */; };
 		3C641802197A336F0066A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641801197A336F0066A389 /* Foundation.framework */; };
 		3C641804197A336F0066A389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641803197A336F0066A389 /* CoreGraphics.framework */; };
 		3C641806197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
@@ -65,6 +73,21 @@
 		3C19E3DD197BB83800B35857 /* RBFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBFirstViewController.m; sourceTree = "<group>"; };
 		3C19E3DF197BBAFF00B35857 /* RBHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBHomeTabBarController.h; sourceTree = "<group>"; };
 		3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBHomeTabBarController.m; sourceTree = "<group>"; };
+		3C19E3E2197BFBF800B35857 /* RBSubscriptionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSubscriptionCodeViewController.h; sourceTree = "<group>"; };
+		3C19E3E3197BFBF800B35857 /* RBSubscriptionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSubscriptionCodeViewController.m; sourceTree = "<group>"; };
+		3C19E3E5197C067200B35857 /* RBCreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCreateAccountViewController.h; sourceTree = "<group>"; };
+		3C19E3E6197C067200B35857 /* RBCreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCreateAccountViewController.m; sourceTree = "<group>"; };
+		3C19E3E8197C0A9200B35857 /* RBResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBResetPasswordViewController.h; sourceTree = "<group>"; };
+		3C19E3E9197C0A9200B35857 /* RBResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBResetPasswordViewController.m; sourceTree = "<group>"; };
+		3C19E3EB197C0C9600B35857 /* RBForgotPasswordSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBForgotPasswordSuccessViewController.h; sourceTree = "<group>"; };
+		3C19E3EC197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBForgotPasswordSuccessViewController.m; sourceTree = "<group>"; };
+		3C19E3EF197C0D8C00B35857 /* RBMenuCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBMenuCustomCell.xib; sourceTree = "<group>"; };
+		3C19E3F4197C0F9C00B35857 /* RBMenuCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMenuCustomCell.h; sourceTree = "<group>"; };
+		3C19E3F5197C0F9C00B35857 /* RBMenuCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMenuCustomCell.m; sourceTree = "<group>"; };
+		3C19E3F7197C10E000B35857 /* RBMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMenuTableViewController.h; sourceTree = "<group>"; };
+		3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMenuTableViewController.m; sourceTree = "<group>"; };
+		3C19E3FA197D06DC00B35857 /* RBFirstNavigatonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBFirstNavigatonViewController.h; sourceTree = "<group>"; };
+		3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBFirstNavigatonViewController.m; sourceTree = "<group>"; };
 		3C6417FE197A336F0066A389 /* bioRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bioRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C641801197A336F0066A389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C641803197A336F0066A389 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +149,18 @@
 				3C19E3DD197BB83800B35857 /* RBFirstViewController.m */,
 				3C19E3DF197BBAFF00B35857 /* RBHomeTabBarController.h */,
 				3C19E3E0197BBAFF00B35857 /* RBHomeTabBarController.m */,
+				3C19E3E2197BFBF800B35857 /* RBSubscriptionCodeViewController.h */,
+				3C19E3E3197BFBF800B35857 /* RBSubscriptionCodeViewController.m */,
+				3C19E3E5197C067200B35857 /* RBCreateAccountViewController.h */,
+				3C19E3E6197C067200B35857 /* RBCreateAccountViewController.m */,
+				3C19E3E8197C0A9200B35857 /* RBResetPasswordViewController.h */,
+				3C19E3E9197C0A9200B35857 /* RBResetPasswordViewController.m */,
+				3C19E3EB197C0C9600B35857 /* RBForgotPasswordSuccessViewController.h */,
+				3C19E3EC197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m */,
+				3C19E3F7197C10E000B35857 /* RBMenuTableViewController.h */,
+				3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */,
+				3C19E3FA197D06DC00B35857 /* RBFirstNavigatonViewController.h */,
+				3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +182,8 @@
 		3C19E35B197A629E00B35857 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C19E3F4197C0F9C00B35857 /* RBMenuCustomCell.h */,
+				3C19E3F5197C0F9C00B35857 /* RBMenuCustomCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +225,14 @@
 			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
+		3C19E3EE197C0D4900B35857 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				3C19E3EF197C0D8C00B35857 /* RBMenuCustomCell.xib */,
+			);
+			name = interfaces;
+			sourceTree = "<group>";
+		};
 		3C6417F5197A336F0066A389 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +267,7 @@
 		3C641807197A336F0066A389 /* bioRhythm */ = {
 			isa = PBXGroup;
 			children = (
+				3C19E3EE197C0D4900B35857 /* interfaces */,
 				3C19E353197A629E00B35857 /* Classes */,
 				3C19E35C197A629E00B35857 /* Resources */,
 				3C641808197A336F0066A389 /* Supporting Files */,
@@ -335,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C19E363197A629E00B35857 /* Images.xcassets in Resources */,
+				3C19E3F0197C0D8C00B35857 /* RBMenuCustomCell.xib in Resources */,
 				3C64180C197A336F0066A389 /* InfoPlist.strings in Resources */,
 				3C19E362197A629E00B35857 /* main.storyboard in Resources */,
 			);
@@ -355,17 +402,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C19E3E4197BFBF800B35857 /* RBSubscriptionCodeViewController.m in Sources */,
+				3C19E3F6197C0F9C00B35857 /* RBMenuCustomCell.m in Sources */,
 				3C19E360197A629E00B35857 /* RBLoginViewController.m in Sources */,
 				3C19E3DB197BB70A00B35857 /* UIViewController+ECSlidingViewController.m in Sources */,
 				3C19E3E1197BBAFF00B35857 /* RBHomeTabBarController.m in Sources */,
 				3C64180E197A336F0066A389 /* main.m in Sources */,
+				3C19E3E7197C067200B35857 /* RBCreateAccountViewController.m in Sources */,
 				3C19E3D8197BB70A00B35857 /* ECSlidingInteractiveTransition.m in Sources */,
 				3C19E3D9197BB70A00B35857 /* ECSlidingSegue.m in Sources */,
 				3C19E361197A629E00B35857 /* RBAppDelegate.m in Sources */,
+				3C19E3F9197C10E000B35857 /* RBMenuTableViewController.m in Sources */,
 				3C19E3DA197BB70A00B35857 /* ECSlidingViewController.m in Sources */,
 				3C19E3D7197BB70A00B35857 /* ECSlidingAnimationController.m in Sources */,
 				3C19E3D6197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				3C19E3ED197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m in Sources */,
 				3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */,
+				3C19E3FC197D06DC00B35857 /* RBFirstNavigatonViewController.m in Sources */,
+				3C19E3EA197C0A9200B35857 /* RBResetPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
