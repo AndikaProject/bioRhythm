@@ -9,6 +9,8 @@
 #import "RBWelcomeViewController.h"
 
 @interface RBWelcomeViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *buttonNewUser;
+@property (strong, nonatomic) IBOutlet UIButton *buttonExistingUser;
 
 @end
 
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.buttonNewUser.backgroundColor = [UIColor grayColor];
+    self.buttonExistingUser.backgroundColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning

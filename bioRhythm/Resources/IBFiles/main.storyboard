@@ -50,6 +50,7 @@
                                 <rect key="frame" x="20" y="240" width="276" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="I'm a new user ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -66,6 +67,7 @@
                                 <rect key="frame" x="25" y="365" width="271" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="I'm an existing user">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -76,6 +78,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="VITALITY" id="u2s-wQ-5Mn"/>
+                    <connections>
+                        <outlet property="buttonExistingUser" destination="6i8-pw-xSQ" id="ah0-Ok-NDH"/>
+                        <outlet property="buttonNewUser" destination="5Q8-cJ-KkK" id="PTF-po-6Yp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O46-xp-vOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,6 +153,9 @@
                                 <state key="normal" title="Read more">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonReadMore1Pressed:" destination="BLR-U2-6SN" eventType="touchUpInside" id="Mc1-R6-shv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mia-TK-RbR">
                                 <rect key="frame" x="79" y="364" width="89" height="29"/>
@@ -154,6 +163,9 @@
                                 <state key="normal" title="Read more">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonReadMore2Pressed:" destination="BLR-U2-6SN" eventType="touchUpInside" id="731-wE-X1d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

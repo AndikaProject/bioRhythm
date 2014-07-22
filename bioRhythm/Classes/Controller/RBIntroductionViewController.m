@@ -35,6 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - action
+- (IBAction)buttonReadMore1Pressed:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"About this APP" message:@"Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit. Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit." delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
+- (IBAction)buttonReadMore2Pressed:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"About privacy and security\n" message:@"Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor.\n \n \u2713 We transfer and store it securely. There is no Departure flight detailsconnection to any ASML DEPARTUREIT system.\n \u2713 No one at ASML has ARRIVAL access to your data.\n \u2713 We will not sell or share your data.\n \u2713 At any point you can download or delete your data. " delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
 /*
 #pragma mark - Navigation
 
