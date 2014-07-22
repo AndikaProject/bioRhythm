@@ -27,6 +27,8 @@
 		3C19E3F6197C0F9C00B35857 /* RBMenuCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3F5197C0F9C00B35857 /* RBMenuCustomCell.m */; };
 		3C19E3F9197C10E000B35857 /* RBMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */; };
 		3C19E3FC197D06DC00B35857 /* RBFirstNavigatonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */; };
+		3C19E402197EAF0A00B35857 /* RBWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19E401197EAF0A00B35857 /* RBWelcomeViewController.m */; };
+		3C602956197EB5970024345A /* RBIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C602955197EB5970024345A /* RBIntroductionViewController.m */; };
 		3C641802197A336F0066A389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641801197A336F0066A389 /* Foundation.framework */; };
 		3C641804197A336F0066A389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641803197A336F0066A389 /* CoreGraphics.framework */; };
 		3C641806197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
@@ -88,6 +90,10 @@
 		3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMenuTableViewController.m; sourceTree = "<group>"; };
 		3C19E3FA197D06DC00B35857 /* RBFirstNavigatonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBFirstNavigatonViewController.h; sourceTree = "<group>"; };
 		3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBFirstNavigatonViewController.m; sourceTree = "<group>"; };
+		3C19E400197EAF0A00B35857 /* RBWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBWelcomeViewController.h; sourceTree = "<group>"; };
+		3C19E401197EAF0A00B35857 /* RBWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBWelcomeViewController.m; sourceTree = "<group>"; };
+		3C602954197EB5970024345A /* RBIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBIntroductionViewController.h; sourceTree = "<group>"; };
+		3C602955197EB5970024345A /* RBIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBIntroductionViewController.m; sourceTree = "<group>"; };
 		3C6417FE197A336F0066A389 /* bioRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bioRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C641801197A336F0066A389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C641803197A336F0066A389 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,6 +167,10 @@
 				3C19E3F8197C10E000B35857 /* RBMenuTableViewController.m */,
 				3C19E3FA197D06DC00B35857 /* RBFirstNavigatonViewController.h */,
 				3C19E3FB197D06DC00B35857 /* RBFirstNavigatonViewController.m */,
+				3C19E400197EAF0A00B35857 /* RBWelcomeViewController.h */,
+				3C19E401197EAF0A00B35857 /* RBWelcomeViewController.m */,
+				3C602954197EB5970024345A /* RBIntroductionViewController.h */,
+				3C602955197EB5970024345A /* RBIntroductionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -416,9 +426,11 @@
 				3C19E3DA197BB70A00B35857 /* ECSlidingViewController.m in Sources */,
 				3C19E3D7197BB70A00B35857 /* ECSlidingAnimationController.m in Sources */,
 				3C19E3D6197BB70A00B35857 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				3C602956197EB5970024345A /* RBIntroductionViewController.m in Sources */,
 				3C19E3ED197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m in Sources */,
 				3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */,
 				3C19E3FC197D06DC00B35857 /* RBFirstNavigatonViewController.m in Sources */,
+				3C19E402197EAF0A00B35857 /* RBWelcomeViewController.m in Sources */,
 				3C19E3EA197C0A9200B35857 /* RBResetPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
