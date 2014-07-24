@@ -1,31 +1,32 @@
 //
-//  RBResetPasswordViewController.m
+//  RBAccountCreatedViewController.m
 //  bioRhythm
 //
-//  Created by defindal irvan on 7/20/14.
+//  Created by defindal irvan on 7/24/14.
 //  Copyright (c) 2014 defindal irvan. All rights reserved.
 //
 
-#import "RBResetPasswordViewController.h"
+#import "RBAccountCreatedViewController.h"
 
-@interface RBResetPasswordViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *buttonResetPassword;
+@interface RBAccountCreatedViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *buttonAccountCreated;
 
 @end
 
-@implementation RBResetPasswordViewController
+@implementation RBAccountCreatedViewController
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.buttonAccountCreated.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    self.buttonResetPassword.backgroundColor = [UIColor blueColor];
 }
 
 /*

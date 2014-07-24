@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
     
-    self.buttonLogin.backgroundColor = [UIColor blackColor];
+    self.buttonLogin.backgroundColor = [UIColor blueColor];
     [_scrollerLogin setScrollEnabled:YES];
     [_scrollerLogin setContentSize:(CGSizeMake(341, 800))];
     

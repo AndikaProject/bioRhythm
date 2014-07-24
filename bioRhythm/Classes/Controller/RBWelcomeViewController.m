@@ -29,8 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonNewUser.backgroundColor = [UIColor grayColor];
-    self.buttonExistingUser.backgroundColor = [UIColor grayColor];
+    self.buttonNewUser.backgroundColor = [UIColor blueColor];
+    self.buttonExistingUser.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning

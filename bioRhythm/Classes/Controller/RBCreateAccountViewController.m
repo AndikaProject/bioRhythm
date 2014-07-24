@@ -9,6 +9,7 @@
 #import "RBCreateAccountViewController.h"
 
 @interface RBCreateAccountViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *buttonCreateAccount;
 
 @end
 
@@ -25,6 +26,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.buttonCreateAccount.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning

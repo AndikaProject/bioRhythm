@@ -39,6 +39,7 @@
 		3C64181D197A336F0066A389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C641805197A336F0066A389 /* UIKit.framework */; };
 		3C641825197A336F0066A389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C641823197A336F0066A389 /* InfoPlist.strings */; };
 		3C641827197A336F0066A389 /* bioRhythmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C641826197A336F0066A389 /* bioRhythmTests.m */; };
+		3C8F788519815A410008C547 /* RBAccountCreatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		3C641822197A336F0066A389 /* bioRhythmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bioRhythmTests-Info.plist"; sourceTree = "<group>"; };
 		3C641824197A336F0066A389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C641826197A336F0066A389 /* bioRhythmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bioRhythmTests.m; sourceTree = "<group>"; };
+		3C8F788319815A410008C547 /* RBAccountCreatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBAccountCreatedViewController.h; sourceTree = "<group>"; };
+		3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAccountCreatedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				3C19E401197EAF0A00B35857 /* RBWelcomeViewController.m */,
 				3C602954197EB5970024345A /* RBIntroductionViewController.h */,
 				3C602955197EB5970024345A /* RBIntroductionViewController.m */,
+				3C8F788319815A410008C547 /* RBAccountCreatedViewController.h */,
+				3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				3C19E3ED197C0C9600B35857 /* RBForgotPasswordSuccessViewController.m in Sources */,
 				3C19E3DE197BB83800B35857 /* RBFirstViewController.m in Sources */,
 				3C19E3FC197D06DC00B35857 /* RBFirstNavigatonViewController.m in Sources */,
+				3C8F788519815A410008C547 /* RBAccountCreatedViewController.m in Sources */,
 				3C19E402197EAF0A00B35857 /* RBWelcomeViewController.m in Sources */,
 				3C19E3EA197C0A9200B35857 /* RBResetPasswordViewController.m in Sources */,
 			);

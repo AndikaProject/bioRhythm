@@ -9,24 +9,18 @@
 #import "RBSubscriptionCodeViewController.h"
 
 @interface RBSubscriptionCodeViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *buttonSubscriptionContinue;
 
 @end
 
 @implementation RBSubscriptionCodeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.buttonSubscriptionContinue.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning
