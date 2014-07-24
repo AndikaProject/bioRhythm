@@ -21,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.buttonSubscriptionContinue.backgroundColor = [UIColor blueColor];
+    [_scrollerSubscription setScrollEnabled:YES];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [_scrollerSubscription setContentSize:CGSizeMake(320, 568)];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -27,6 +27,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.buttonCreateAccount.backgroundColor = [UIColor blueColor];
+    
+    [_scrollerCreateAccount setScrollEnabled:YES];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [_scrollerCreateAccount setContentSize:CGSizeMake(320, 700)];
+    
 }
 
 - (void)didReceiveMemoryWarning

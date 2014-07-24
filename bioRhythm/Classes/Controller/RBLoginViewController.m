@@ -34,12 +34,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
     self.buttonLogin.backgroundColor = [UIColor blueColor];
     [_scrollerLogin setScrollEnabled:YES];
-    [_scrollerLogin setContentSize:(CGSizeMake(341, 800))];
     
-    // Do any additional setup after loading the view.
+
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [_scrollerLogin setContentSize:CGSizeMake(320, 700)];
+    
 }
 
 - (void)didReceiveMemoryWarning

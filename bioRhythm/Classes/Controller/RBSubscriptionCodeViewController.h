@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RBSubscriptionCodeViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollerSubscription;
 
 @end

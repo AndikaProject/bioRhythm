@@ -12,4 +12,6 @@
 
 + (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollerCreateAccount;
+
 @end

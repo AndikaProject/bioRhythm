@@ -11,6 +11,7 @@
 @interface RBLoginViewController : UIViewController
 
 + (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollerLogin;
 
 @end

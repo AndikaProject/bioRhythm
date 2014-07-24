@@ -10,4 +10,6 @@
 
 @interface RBAccountCreatedViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollerAccountCreated;
+
 @end

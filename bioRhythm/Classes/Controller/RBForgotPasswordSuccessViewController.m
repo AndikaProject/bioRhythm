@@ -8,6 +8,8 @@
 
 #import "RBForgotPasswordSuccessViewController.h"
 
+#import "RBLoginViewController.h"
+
 @interface RBForgotPasswordSuccessViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *buttonGoToLogin;
 
@@ -26,6 +28,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - action
+- (IBAction)buttonGoToLoginPressed:(id)sender {
+//    RBLoginViewController *controller = [RBLoginViewController controllerWithStoryBoard:self.storyboard];
+//    [self presentViewController:controller animated:YES completion:nil];
 }
 
 /*
