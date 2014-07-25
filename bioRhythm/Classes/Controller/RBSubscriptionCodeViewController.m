@@ -24,7 +24,11 @@
     [_scrollerSubscription setScrollEnabled:YES];
 }
 
+<<<<<<< HEAD
 - (void)viewDidAppear:(BOOL)animated {
+=======
+- (void) viewDidAppear:(BOOL)animated {
+>>>>>>> FETCH_HEAD
     [_scrollerSubscription setContentSize:CGSizeMake(320, 568)];
     
 }
