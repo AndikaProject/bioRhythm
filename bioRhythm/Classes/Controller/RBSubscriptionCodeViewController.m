@@ -24,7 +24,7 @@
     [_scrollerSubscription setScrollEnabled:YES];
 }
 
-- (void) viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     [_scrollerSubscription setContentSize:CGSizeMake(320, 568)];
     
 }

@@ -1,25 +1,28 @@
 //
-//  RBMenuTableViewController.m
+//  RBSideMenuViewController.m
 //  bioRhythm
 //
-//  Created by defindal irvan on 7/20/14.
+//  Created by defindal irvan on 7/25/14.
 //  Copyright (c) 2014 defindal irvan. All rights reserved.
 //
 
-#import "RBMenuTableViewController.h"
+#import "RBSideMenuViewController.h"
 
 #import "RBMenuCustomCell.h"
+
 #import "UIViewController+ECSlidingViewController.h"
 
-@interface RBMenuTableViewController ()
-@property (strong, nonatomic) IBOutlet UITableView *tableViewMenu;
+@interface RBSideMenuViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableView *sideMenu;
 @property (strong, nonatomic) NSString *text;
+
 @end
 
-@implementation RBMenuTableViewController
+@implementation RBSideMenuViewController
 
 + (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard withText:(NSString *)text{
-    RBMenuTableViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBMenuTableViewController"];
+    RBSideMenuViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBSideMenuViewController"];
     controller.text = text;
     return controller;
 }
@@ -27,14 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"RBMenuCustomCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier: @"RBMenuCustomCell"];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.sideMenu registerNib:[UINib nibWithNibName:@"RBMenuCustomCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier: @"RBMenuCustomCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,9 +45,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
     return 5;
 }
+
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//
+//    return 5;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -64,17 +67,31 @@
     }else if (section == 4){
         return 2;
     }
-    //    } else if (section == 1) {
-    //        return 3;
-    //    } else if (section == 2) {
-    //        return 2;
-    //    }
     return 0;
 }
 
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    if (section == 0){
+//        return 4;
+//    }else if (section == 1) {
+//        return 1;
+//    }else if (section == 2) {
+//        return 3;
+//    }else if (section == 3){
+//        return 1;
+//    }else if (section == 4){
+//        return 2;
+//    }
+//    //    } else if (section == 1) {
+//    //        return 3;
+//    //    } else if (section == 2) {
+//    //        return 2;
+//    //    }
+//    return 0;
+//}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
     
     if (indexPath.section == 0) {
         RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
@@ -96,20 +113,21 @@
                 break;
         }
         
-        
         return cell;
+        
     }else if (indexPath.section == 1) {
         static NSString *CellIdentifier = @"RBFirstTitleCell";
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-           reuseIdentifier:CellIdentifier];
-             }
-
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                          reuseIdentifier:CellIdentifier];
+        }
+        
         cell.textLabel.text = @"ASML";
         
         return cell;
+        
     }else if (indexPath.section == 2) {
         RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
         
@@ -123,11 +141,12 @@
             case 2:
                 cell.labelMenu.text = @"Start Shift Work Program";
                 break;
-            
+                
             default:
                 break;
         }
         return cell;
+        
     }else if (indexPath.section == 3) {
         static NSString *CellIdentifier = @"RBSecondTitleCell";
         
@@ -140,7 +159,7 @@
         cell.textLabel.text = @"Other";
         
         return cell;
-
+        
     }else if (indexPath.section == 4) {
         RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
         
@@ -158,14 +177,13 @@
         return cell;
     }
     
-    
     return nil;
 }
 
 
 #pragma mark - UITableViewDelegate
 
-    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     if (indexPath.section == 0) {
@@ -189,54 +207,7 @@
         [self.slidingViewController resetTopViewAnimated:YES];
     }
 }
-/*
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
- {
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
- 
- // Configure the cell...
- 
- return cell;
- }
- */
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 /*
  #pragma mark - Navigation
