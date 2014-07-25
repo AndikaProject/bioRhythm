@@ -787,19 +787,6 @@ www.getbrightr.com</string>
             </objects>
             <point key="canvasLocation" x="-845" y="-684"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Jk3-Gd-deB">
-            <objects>
-                <viewController id="A5y-nj-jiy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4C3-Qq-XQ1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Por-gz-7SL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
