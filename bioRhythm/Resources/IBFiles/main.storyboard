@@ -635,10 +635,10 @@ www.getbrightr.com</string>
             </objects>
             <point key="canvasLocation" x="-749" y="2957"/>
         </scene>
-        <!--View Controller - Second-->
+        <!--Second View Controller - Second-->
         <scene sceneID="yd5-om-srO">
             <objects>
-                <viewController id="qCe-Nj-BdS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RBSecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qCe-Nj-BdS" customClass="RBSecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="myJ-F2-2E6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -654,12 +654,15 @@ www.getbrightr.com</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <connections>
+                                <action selector="buttonMenuPressed:" destination="qCe-Nj-BdS" id="tGB-tR-uIG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGP-bj-D8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="2963"/>
+            <point key="canvasLocation" x="-230" y="2957"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="cpe-hv-n2o">

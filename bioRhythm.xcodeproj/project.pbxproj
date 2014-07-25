@@ -40,6 +40,7 @@
 		3C641827197A336F0066A389 /* bioRhythmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C641826197A336F0066A389 /* bioRhythmTests.m */; };
 		3C8F788519815A410008C547 /* RBAccountCreatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */; };
 		3C8F788819820A040008C547 /* RBSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F788719820A040008C547 /* RBSideMenuViewController.m */; };
+		3C8F788B1982385E0008C547 /* RBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F788A1982385E0008C547 /* RBSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAccountCreatedViewController.m; sourceTree = "<group>"; };
 		3C8F788619820A040008C547 /* RBSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSideMenuViewController.h; sourceTree = "<group>"; };
 		3C8F788719820A040008C547 /* RBSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSideMenuViewController.m; sourceTree = "<group>"; };
+		3C8F78891982385E0008C547 /* RBSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSecondViewController.h; sourceTree = "<group>"; };
+		3C8F788A1982385E0008C547 /* RBSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				3C8F788419815A410008C547 /* RBAccountCreatedViewController.m */,
 				3C8F788619820A040008C547 /* RBSideMenuViewController.h */,
 				3C8F788719820A040008C547 /* RBSideMenuViewController.m */,
+				3C8F78891982385E0008C547 /* RBSecondViewController.h */,
+				3C8F788A1982385E0008C547 /* RBSecondViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				3C19E3F6197C0F9C00B35857 /* RBMenuCustomCell.m in Sources */,
 				3C19E360197A629E00B35857 /* RBLoginViewController.m in Sources */,
 				3C19E3DB197BB70A00B35857 /* UIViewController+ECSlidingViewController.m in Sources */,
+				3C8F788B1982385E0008C547 /* RBSecondViewController.m in Sources */,
 				3C19E3E1197BBAFF00B35857 /* RBHomeTabBarController.m in Sources */,
 				3C64180E197A336F0066A389 /* main.m in Sources */,
 				3C19E3E7197C067200B35857 /* RBCreateAccountViewController.m in Sources */,
