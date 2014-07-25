@@ -5,28 +5,18 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
 	<string>61F321ED-D49B-4F8C-8BE9-C5E02C3A9491</string>
-=======
-	<string>8C892E00-975F-4802-9BDF-A583D9ED741C</string>
->>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectName</key>
 	<string>bioRhythm</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
 		<key>C0E594CD-C7B9-481A-93BB-4BFEF6D56EDA</key>
 		<string>https://github.com/AndikaProject/bioRhythm.git</string>
-=======
-		<key>4FA588D7-3E39-4408-99EC-79BEE295D015</key>
-		<string>https://github.com/AndikaProject/brightriOS.git</string>
->>>>>>> FETCH_HEAD
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>bioRhythm.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
 		<key>C0E594CD-C7B9-481A-93BB-4BFEF6D56EDA</key>
 		<string>../..</string>
 	</dict>
@@ -36,32 +26,15 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>C0E594CD-C7B9-481A-93BB-4BFEF6D56EDA</string>
-=======
-		<key>4FA588D7-3E39-4408-99EC-79BEE295D015</key>
-		<string>../..</string>
-	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AndikaProject/brightriOS.git</string>
-	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
-	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4FA588D7-3E39-4408-99EC-79BEE295D015</string>
->>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
 			<string>C0E594CD-C7B9-481A-93BB-4BFEF6D56EDA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>bioRhythm</string>
-=======
-			<string>4FA588D7-3E39-4408-99EC-79BEE295D015</string>
-			<key>IDESourceControlWCCName</key>
-			<string>brightriOS</string>
->>>>>>> FETCH_HEAD
 		</dict>
 	</array>
 </dict>
