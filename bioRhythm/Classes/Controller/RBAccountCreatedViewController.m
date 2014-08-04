@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonAccountCreated.backgroundColor = [UIColor blueColor];
+    self.buttonAccountCreated.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
     
     [_scrollerAccountCreated setScrollEnabled:YES];
 }

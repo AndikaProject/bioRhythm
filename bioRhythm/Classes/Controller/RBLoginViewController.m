@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPassword;
 @property (strong, nonatomic) IBOutlet UIButton *buttonLogin;
+@property (strong, nonatomic) IBOutlet UIButton *buttonForgotPassword;
 
 
 
@@ -36,7 +37,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.buttonLogin.backgroundColor = [UIColor blueColor];
+    self.buttonLogin.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
+    self.buttonForgotPassword.backgroundColor = [UIColor lightGrayColor];
+    
     [_scrollerLogin setScrollEnabled:YES];
     
 

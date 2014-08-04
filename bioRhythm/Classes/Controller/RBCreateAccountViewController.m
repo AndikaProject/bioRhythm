@@ -10,6 +10,7 @@
 
 @interface RBCreateAccountViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *buttonCreateAccount;
+@property (strong, nonatomic) IBOutlet UIButton *buttonTermsAndCondition;
 
 @end
 
@@ -26,7 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonCreateAccount.backgroundColor = [UIColor blueColor];
+    self.buttonCreateAccount.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
+    self.buttonTermsAndCondition.backgroundColor = [UIColor lightGrayColor];
     
     [_scrollerCreateAccount setScrollEnabled:YES];
 }

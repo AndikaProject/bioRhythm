@@ -10,6 +10,8 @@
 
 @interface RBSubscriptionCodeViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *buttonSubscriptionContinue;
+@property (strong, nonatomic) IBOutlet UIButton *buttonLostYourCode;
+@property (strong, nonatomic) IBOutlet UIButton *buttonWeb;
 
 @end
 
@@ -20,7 +22,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonSubscriptionContinue.backgroundColor = [UIColor blueColor];
+    self.buttonSubscriptionContinue.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
+    self.buttonLostYourCode.backgroundColor = [UIColor lightGrayColor];
+    self.buttonWeb.backgroundColor = [UIColor lightGrayColor];
+    
+    
     [_scrollerSubscription setScrollEnabled:YES];
 }
 

@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonGoToLogin.backgroundColor = [UIColor blueColor];
+    self.buttonGoToLogin.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,4 +10,6 @@
 
 @interface RBIntroductionViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollerIntroduction;
+
 @end

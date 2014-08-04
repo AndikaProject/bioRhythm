@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonResetPassword.backgroundColor = [UIColor blueColor];
+    self.buttonResetPassword.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
     [_scrollerResetPassword setScrollEnabled:YES];
 }
 

@@ -9,7 +9,10 @@
 #import "RBIntroductionViewController.h"
 
 @interface RBIntroductionViewController ()
+
 @property (strong, nonatomic) IBOutlet UIButton *buttonGotIt;
+@property (strong, nonatomic) IBOutlet UIButton *firstReadMore;
+@property (strong, nonatomic) IBOutlet UIButton *secondReadMore;
 
 @end
 
@@ -28,7 +31,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonGotIt.backgroundColor = [UIColor blueColor];
+    self.buttonGotIt.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
+    self.firstReadMore.backgroundColor = [UIColor lightGrayColor];
+    self.secondReadMore.backgroundColor = [UIColor lightGrayColor];
+    
+    [_scrollerIntroduction setScrollEnabled:YES];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [_scrollerIntroduction setContentSize:CGSizeMake(320, 568)];
+    
 }
 
 - (void)didReceiveMemoryWarning
