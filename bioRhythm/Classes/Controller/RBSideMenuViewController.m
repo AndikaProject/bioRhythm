@@ -45,7 +45,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 1;
 }
 
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -57,16 +57,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0){
-        return 4;
-    }else if (section == 1) {
-        return 1;
-    }else if (section == 2) {
-        return 3;
-    }else if (section == 3){
-        return 1;
-    }else if (section == 4){
-        return 2;
+        return 5;
     }
+    //    }else if (section == 1) {
+    //        return 1;
+    //    }else if (section == 2) {
+    //        return 3;
+    //    }else if (section == 3){
+    //        return 1;
+    //    }else if (section == 4){
+    //        return 2;
+    //    }
     return 0;
 }
 
@@ -98,84 +99,88 @@
         
         switch (indexPath.row) {
             case 0:
-                cell.labelMenu.text = @"Home";
+                cell.labelMenu.text = @"Manage sleep plan";
                 break;
             case 1:
-                cell.labelMenu.text = @"Start 12 Week Program";
+                cell.labelMenu.text = @"Events calendar";
                 break;
             case 2:
-                cell.labelMenu.text = @"Start Shift Work Program";
+                cell.labelMenu.text = @"Human coach";
                 break;
             case 3:
-                cell.labelMenu.text = @"Start Jetlag Program";
-                break;
-            default:
-                break;
-        }
-        
-        return cell;
-        
-    }else if (indexPath.section == 1) {
-        static NSString *CellIdentifier = @"RBFirstTitleCell";
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                          reuseIdentifier:CellIdentifier];
-        }
-        
-        cell.textLabel.text = @"ASML";
-        
-        return cell;
-        
-    }else if (indexPath.section == 2) {
-        RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
-        
-        switch (indexPath.row) {
-            case 0:
-                cell.labelMenu.text = @"Viltality Blog";
-                break;
-            case 1:
-                cell.labelMenu.text = @"Events";
-                break;
-            case 2:
-                cell.labelMenu.text = @"Start Shift Work Program";
-                break;
-                
-            default:
-                break;
-        }
-        return cell;
-        
-    }else if (indexPath.section == 3) {
-        static NSString *CellIdentifier = @"RBSecondTitleCell";
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                          reuseIdentifier:CellIdentifier];
-        }
-        
-        cell.textLabel.text = @"Other";
-        
-        return cell;
-        
-    }else if (indexPath.section == 4) {
-        RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
-        
-        switch (indexPath.row) {
-            case 0:
                 cell.labelMenu.text = @"Settings";
                 break;
-            case 1:
+            case 4:
                 cell.labelMenu.text = @"Support";
                 break;
-                
             default:
                 break;
         }
+        
         return cell;
     }
+    
+    //    }else if (indexPath.section == 1) {
+    //        static NSString *CellIdentifier = @"RBFirstTitleCell";
+    //
+    //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //        if (cell == nil) {
+    //            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+    //                                          reuseIdentifier:CellIdentifier];
+    //        }
+    //
+    //        cell.textLabel.text = @"ASML";
+    //
+    //        return cell;
+    //
+    //    }else if (indexPath.section == 2) {
+    //        RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
+    //
+    //        switch (indexPath.row) {
+    //            case 0:
+    //                cell.labelMenu.text = @"Viltality Blog";
+    //                break;
+    //            case 1:
+    //                cell.labelMenu.text = @"Events";
+    //                break;
+    //            case 2:
+    //                cell.labelMenu.text = @"Start Shift Work Program";
+    //                break;
+    //
+    //            default:
+    //                break;
+    //        }
+    //        return cell;
+    //
+    //    }else if (indexPath.section == 3) {
+    //        static NSString *CellIdentifier = @"RBSecondTitleCell";
+    //
+    //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //        if (cell == nil) {
+    //            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+    //                                          reuseIdentifier:CellIdentifier];
+    //        }
+    //
+    //        cell.textLabel.text = @"Other";
+    //
+    //        return cell;
+    //
+    //    }else if (indexPath.section == 4) {
+    //        RBMenuCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RBMenuCustomCell"];
+    //
+    //        switch (indexPath.row) {
+    //            case 0:
+    //                cell.labelMenu.text = @"Settings";
+    //                break;
+    //            case 1:
+    //                cell.labelMenu.text = @"Support";
+    //                break;
+    //
+    //            default:
+    //                break;
+    //        }
+    //        return cell;
+    //    }
     
     return nil;
 }
@@ -189,7 +194,7 @@
     if (indexPath.section == 0) {
         switch (indexPath.row) {
             case 0:
-                self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBFirstHomeNavigationController"];
+                self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBSleepPlanViewController"];
                 break;
             case 1:
                 self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBFirstHomeNavigationController"];
@@ -198,6 +203,9 @@
                 self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBFirstHomeNavigationController"];
                 break;
             case 3:
+                self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBFirstHomeNavigationController"];
+                break;
+            case 4:
                 self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RBFirstHomeNavigationController"];
                 break;
             default:

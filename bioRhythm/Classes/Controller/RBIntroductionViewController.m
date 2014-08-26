@@ -8,40 +8,59 @@
 
 #import "RBIntroductionViewController.h"
 
+#import "RBSecondIntroductionViewController.h"
+
 @interface RBIntroductionViewController ()
 
-@property (strong, nonatomic) IBOutlet UIButton *buttonGotIt;
-@property (strong, nonatomic) IBOutlet UIButton *firstReadMore;
-@property (strong, nonatomic) IBOutlet UIButton *secondReadMore;
+@property (strong, nonatomic) IBOutlet UIButton *buttonImIn;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
 
 @end
 
 @implementation RBIntroductionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard {
+    RBIntroductionViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBIntroductionViewController"];
+    
+    return controller;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonGotIt.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
-    self.firstReadMore.backgroundColor = [UIColor lightGrayColor];
-    self.secondReadMore.backgroundColor = [UIColor lightGrayColor];
     
-    [_scrollerIntroduction setScrollEnabled:YES];
+    // set round corner button
+    _buttonImIn.layer.cornerRadius = 5;
+    
+    // set border width
+    _buttonImIn.layer.borderWidth = 0.5f;
+    
+    // set border color
+    _buttonImIn.layer.borderColor = [UIColor colorWithRed:(79/255.0) green:(193/255.0) blue:(233/255.0) alpha:1].CGColor;
+    
+    // set image view
+    [_imageView setImage:[UIImage imageNamed:@"all_plans.png"]];
+
+    UISwipeGestureRecognizer *swipeleft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeleft:)];
+    swipeleft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeleft];
+    
 }
 
-- (void) viewDidAppear:(BOOL)animated {
-    [_scrollerIntroduction setContentSize:CGSizeMake(320, 568)];
-    
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];   //it hides
 }
+
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO];    // it shows
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -49,16 +68,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - action
-- (IBAction)buttonReadMore1Pressed:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"About this APP" message:@"Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit. Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit." delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
-    [alert show];
+-(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer
+{
+    RBSecondIntroductionViewController *controller = [RBSecondIntroductionViewController controllerWithStoryBoard:self.storyboard];
+    [self.navigationController pushViewController:controller animated:NO];
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype =kCATransitionFromRight;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
-- (IBAction)buttonReadMore2Pressed:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"About privacy and security\n" message:@"Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor.\n \n \u2713 We transfer and store it securely. There is no Departure flight details connection to any ASML DEPARTUREIT system.\n \u2713 No one at ASML has ARRIVAL access to your data.\n \u2713 We will not sell or share your data.\n \u2713 At any point you can download or delete your data. " delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
-    [alert show];
-}
+
+#pragma mark - action
 
 /*
 #pragma mark - Navigation

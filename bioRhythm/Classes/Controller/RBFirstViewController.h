@@ -10,4 +10,6 @@
 
 @interface RBFirstViewController : UIViewController
 
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
 @end

@@ -11,18 +11,53 @@
 #import "RBLoginViewController.h"
 
 @interface RBForgotPasswordSuccessViewController ()
+
 @property (strong, nonatomic) IBOutlet UIButton *buttonGoToLogin;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @end
 
 @implementation RBForgotPasswordSuccessViewController
 
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard {
+    RBForgotPasswordSuccessViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"RBForgotPasswordSuccessViewController"];
+    
+    return controller;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonGoToLogin.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
+    
+    [_navigationBar setBarTintColor:[UIColor colorWithRed:(79/255.0) green:(193/255.0) blue:(233/255.0) alpha:1]];
+    
+    _navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
+    // set round corner button
+    _buttonGoToLogin.layer.cornerRadius = 5;
+    
+    // set border width
+    _buttonGoToLogin.layer.borderWidth = 0.5f;
+    
+    // set border color
+    _buttonGoToLogin.layer.borderColor = [UIColor colorWithRed:(79/255.0) green:(193/255.0) blue:(233/255.0) alpha:1].CGColor;
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];   //it hides
+}
+
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO];    // it shows
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -32,8 +67,8 @@
 
 #pragma mark - action
 - (IBAction)buttonGoToLoginPressed:(id)sender {
-//    RBLoginViewController *controller = [RBLoginViewController controllerWithStoryBoard:self.storyboard];
-//    [self presentViewController:controller animated:YES completion:nil];
+    RBLoginViewController *controller = [RBLoginViewController controllerWithStoryBoard:self.storyboard];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 /*

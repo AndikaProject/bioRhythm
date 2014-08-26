@@ -13,9 +13,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(38/255.0) green:(127/255.0) blue:(192/255.0) alpha:1]];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(38/255.0) green:(127/255.0) blue:(192/255.0) alpha:1]];
+//    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     return YES;
 }

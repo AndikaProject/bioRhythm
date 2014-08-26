@@ -10,4 +10,8 @@
 
 @interface RBSecondViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollerCoach;
+
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
 @end

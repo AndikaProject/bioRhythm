@@ -10,4 +10,6 @@
 
 @interface RBForgotPasswordSuccessViewController : UIViewController
 
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
 @end

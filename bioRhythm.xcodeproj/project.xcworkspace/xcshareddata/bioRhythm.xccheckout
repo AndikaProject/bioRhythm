@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8C892E00-975F-4802-9BDF-A583D9ED741C</string>
+	<string>29607765-D34A-43EF-8238-115D3B6895ED</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bioRhythm</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4FA588D7-3E39-4408-99EC-79BEE295D015</key>
-		<string>https://github.com/AndikaProject/brightriOS.git</string>
+		<key>934A4453-FAF0-4E7B-8543-BBBE04A5724B</key>
+		<string>https://github.com/AndikaProject/backuptest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>bioRhythm.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4FA588D7-3E39-4408-99EC-79BEE295D015</key>
+		<key>934A4453-FAF0-4E7B-8543-BBBE04A5724B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AndikaProject/brightriOS.git</string>
+	<string>https://github.com/AndikaProject/backuptest.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4FA588D7-3E39-4408-99EC-79BEE295D015</string>
+	<string>934A4453-FAF0-4E7B-8543-BBBE04A5724B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4FA588D7-3E39-4408-99EC-79BEE295D015</string>
+			<string>934A4453-FAF0-4E7B-8543-BBBE04A5724B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>brightriOS</string>
+			<string>backuptest</string>
 		</dict>
 	</array>
 </dict>

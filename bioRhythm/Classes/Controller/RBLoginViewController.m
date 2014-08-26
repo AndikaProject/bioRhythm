@@ -9,7 +9,7 @@
 #import "RBLoginViewController.h"
 
 #import "RBCreateAccountViewController.h"
-
+#import "RBResetPasswordViewController.h"
 
 
 @interface RBLoginViewController ()
@@ -18,8 +18,12 @@
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPassword;
 @property (strong, nonatomic) IBOutlet UIButton *buttonLogin;
 @property (strong, nonatomic) IBOutlet UIButton *buttonForgotPassword;
+@property (strong, nonatomic) IBOutlet UILabel *labelLoginFailed;
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewEmail;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewPass;
 
+- (IBAction)forgotPass:(id)sender;
 
 @end
 
@@ -37,18 +41,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.buttonLogin.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
-    self.buttonForgotPassword.backgroundColor = [UIColor lightGrayColor];
+    // set back button title
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain
+                                    target:nil
+                                    action:nil];
+    self.navigationItem.backBarButtonItem=backButton;
     
-    [_scrollerLogin setScrollEnabled:YES];
+    // set round corner button
+    _buttonLogin.layer.cornerRadius = 5;
     
+    // set image view
+    [_imageViewEmail setImage:[UIImage imageNamed:@"textField.png"]];
+    [_imageViewPass setImage:[UIImage imageNamed:@"textField.png"]];
+    
+    // set border image
+    
+    _imageViewEmail.layer.borderWidth = 1.0;
+    _imageViewEmail.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _imageViewEmail.layer.cornerRadius = 5.0;
+    
+    _imageViewPass.layer.borderWidth = 1.0;
+    _imageViewPass.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _imageViewPass.layer.cornerRadius = 5.0;
 
+    
 }
 
-- (void) viewDidAppear:(BOOL)animated {
-    [_scrollerLogin setContentSize:CGSizeMake(320, 700)];
-    
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];   //it hides
 }
+
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO];    // it shows
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -73,19 +102,39 @@
     NSString *password = _textFieldPassword.text;
     UIAlertView *alertView;
     if (name.length == 0 || password.length == 0) {
-        alertView  = [[UIAlertView alloc] initWithTitle:@"error" message:@"please fill username and password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alertView show];
+        //        alertView  = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill username and password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        //        [alertView show];
+        _labelLoginFailed.text = @"Invalid username or password";
     } else {
-        alertView = [[UIAlertView alloc] initWithTitle:@"login" message:@"success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        alertView = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Username and password correct" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
     
 }
 
+- (IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+- (IBAction)dismissKeypad:(id)sender
+{
+    [_textFieldEmail resignFirstResponder];
+    [_textFieldPassword resignFirstResponder];
+}
+
+- (IBAction)forgotPass:(id)sender
+{
+ 
+    RBResetPasswordViewController *controller = [RBResetPasswordViewController controllerWithStoryBoard:self.storyboard];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
+
 
 //- (IBAction)buttonCreateAccountPressed:(id)sender {
-//  
+//
 // RBCreateAccountViewController *controller = [RBCreateAccountViewController controllerWithStoryBoard:self.storyboard];
 //[self presentViewController:controller animated:YES completion:nil];
 //   

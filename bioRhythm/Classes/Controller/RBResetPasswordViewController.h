@@ -10,6 +10,8 @@
 
 @interface RBResetPasswordViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollerResetPassword;
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
+
+-(IBAction)textFieldReturn:(id)sender;
 
 @end

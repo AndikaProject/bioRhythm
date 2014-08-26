@@ -8,9 +8,19 @@
 
 #import "RBCreateAccountViewController.h"
 
+#import "RBFirstCalIntroViewController.h"
+
 @interface RBCreateAccountViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *buttonCreateAccount;
 @property (strong, nonatomic) IBOutlet UIButton *buttonTermsAndCondition;
+@property (strong, nonatomic) IBOutlet UILabel *labelPasswordDoNotMatch;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldPassword;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldRepeatPassword;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewEmail;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewPassword;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewRepeatPass;
 
 @end
 
@@ -27,16 +37,43 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.buttonCreateAccount.backgroundColor = [UIColor colorWithRed:(62/255.0) green:(181/255.0) blue:(75/255.0) alpha:1];
-    self.buttonTermsAndCondition.backgroundColor = [UIColor lightGrayColor];
     
-    [_scrollerCreateAccount setScrollEnabled:YES];
+    // set round corner button
+    _buttonCreateAccount.layer.cornerRadius = 5;
+    
+    // set image view
+    [_imageViewEmail setImage:[UIImage imageNamed:@"textField.png"]];
+    [_imageViewPassword setImage:[UIImage imageNamed:@"textField.png"]];
+    [_imageViewRepeatPass setImage:[UIImage imageNamed:@"textField.png"]];
+    
+    // set border image
+    
+    _imageViewEmail.layer.borderWidth = 1.0;
+    _imageViewEmail.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _imageViewEmail.layer.cornerRadius = 5.0;
+    
+    _imageViewPassword.layer.borderWidth = 1.0;
+    _imageViewPassword.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _imageViewPassword.layer.cornerRadius = 5.0;
+
+    
+    _imageViewRepeatPass.layer.borderWidth = 1.0;
+    _imageViewRepeatPass.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _imageViewRepeatPass.layer.cornerRadius = 5.0;
+
 }
 
-- (void) viewDidAppear:(BOOL)animated {
-    [_scrollerCreateAccount setContentSize:CGSizeMake(320, 700)];
-    
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];   //it hides
 }
+
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO];    // it shows
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -46,9 +83,40 @@
 
 #pragma mark - action
 
+- (IBAction)buttonCreateAccountPressed:(id)sender {
+    NSString *password = _textFieldPassword.text;
+    NSString *rpassword = _textFieldRepeatPassword.text;
+    
+    if (password.length == 0 || rpassword.length == 0) {
+        _labelPasswordDoNotMatch.text = @"Password do not match";
+    }
+    else
+    {
+        RBFirstCalIntroViewController *controller = [RBFirstCalIntroViewController controllerWithStoryBoard:self.storyboard];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+//    }
+//    else if (checked == NO){
+//        alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Agree and terms conditions is uncheck" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alertView show];
+//    }
+}
+
 - (IBAction)buttonTACPressed:(id)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Terms and Condition" message:@"Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit. Mauris ipsum lectus, placerat id diam non, laoreet egestas tortor. Cras at ullamcorper turpis, sodales scelerisque libero. Quisque suscipit leo eu felis volutpat, sed aliquam nulla hendrerit." delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
     [alert show];
+}
+
+- (IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+- (IBAction)dismissKeypad:(id)sender
+{
+    [_textFieldEmail resignFirstResponder];
+    [_textFieldPassword resignFirstResponder];
+    [_textFieldRepeatPassword resignFirstResponder];
 }
 
 /*

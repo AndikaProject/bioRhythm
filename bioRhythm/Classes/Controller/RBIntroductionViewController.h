@@ -10,6 +10,6 @@
 
 @interface RBIntroductionViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollerIntroduction;
++ (instancetype)controllerWithStoryBoard:(UIStoryboard *)storyboard;
 
 @end
